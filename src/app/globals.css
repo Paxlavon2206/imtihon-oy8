@@ -1,15 +1,16 @@
-@tailwind base;
-@tailwind components;
-@tailwind utilities;
+  @tailwind base;
+  @tailwind components;
+  @tailwind utilities;
+  
 
 
-
-.navbar::before{
+  .navbar::before{
     content: "";
-    background-image: url("../../public/flag.png");
+    background-image: url("/flag.png");
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;
-    display: flex;
-    margin-right: 6px;
-}
+    display: block;
+  }
+
+ 

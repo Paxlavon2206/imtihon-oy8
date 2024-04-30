@@ -13,11 +13,11 @@ export const Banner = async () => {
   console.log(data);
   return (
    <div>
-     <Carousel>
+     <Carousel >
     <CarouselContent>
       {data.map((item) => (
         <CarouselItem key={item.id}>
-          <img src={item.img} alt="img" />
+          <img className="object-fill" src={item.img} alt="img" />
         </CarouselItem>
       ))}
     </CarouselContent>

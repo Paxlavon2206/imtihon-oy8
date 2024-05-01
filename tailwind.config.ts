@@ -1,6 +1,6 @@
-import type { Config } from "tailwindcss"
+import type { Config } from "tailwindcss";
 
-const config = {
+const config: Config = {
   darkMode: ["class"],
   content: [
     './pages/**/*.{ts,tsx}',
@@ -13,14 +13,16 @@ const config = {
     extend: {
       colors: {
         primary:"#1FBA4A",
-        secondary:"#F6F8FA",        
+        secondary:"#F6F8FA", 
+        greyBg:"#F6F8FA",       
       },
       container: {
         center: true,
         screens:{
           "2xl": "1400px",
-          xl: "1200px",
+          xl: "1240px",
           lg: "1024px",
+          smlg: "992px",
           md: "768px",
           sm: "640px",
           xs: "480px",
@@ -40,9 +42,12 @@ const config = {
         "accordion-down": "accordion-down 0.2s ease-out",
         "accordion-up": "accordion-up 0.2s ease-out",
       },
+      fontFamily: {
+        sans: ['Lato', 'sans-serif'],
+      },
     },
   },
   plugins: [require("tailwindcss-animate")],
-} satisfies Config
+};
 
-export default config
+export default config;

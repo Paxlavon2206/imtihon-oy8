@@ -8,3 +8,8 @@ export interface DataProps {
     brand:string
     slug:string
 }
+export interface bannerType {
+    img: string
+    title: string
+    id: number
+}

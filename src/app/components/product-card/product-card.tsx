@@ -16,8 +16,10 @@ export const ProductCard = async ({title, img,  price,id}: ProductCardProps) => 
 const productData = await Products()
   return (<>
   <div className="bg-white w-[200px] lg:w-[230px] h-[403px] justify-between p-3 flex flex-col rounded-lg">
+    <Link href={`/products/${id}`} >
     <img className="object-contain h-[230px]" src={img} alt="img" />
-    <Link href={`/products/${id}`} className="hover:text-primary text-md font-medium text-center">{title.length>25?title.slice(0,25)+"...":title}</Link>
+    <div className="hover:text-primary text-md font-medium text-center">{title.length>25?title.slice(0,25)+"...":title}</div>
+    </Link>
     <div className="flex justify-between items-center">
       <Rating/>
       <p className="text-gray-500 font-medium text-sm line-through">23000000 so'm </p>

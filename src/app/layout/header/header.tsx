@@ -42,10 +42,11 @@ export const Header = () => {
           </div>
         </div>
         <div className="flex">
-         <div  className="hidden lg:flex mr-6 cursor-pointer " ><Notification/></div>
-          <Button className="flex gap-3">
-            <p className=" hidden lg:flex">Kirish</p> <Profile />{" "}
+         <div  className="hidden lg:flex mr-6 cursor-pointer  text-black hover:text-green-600" ><Notification/></div>
+          <Button className="flex mr-3">
+            <p className=" hidden lg:flex hover:text-green-600">Kirish</p> {" "}
           </Button>
+          <Button className="hover:scale-110 hover:text-green-600"><Profile /></Button>
         </div>
       </header>
     </div>

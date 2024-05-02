@@ -8,7 +8,7 @@ export const Catalog =  async () => {
     const catalog = await Catalogs()
   return (
     <div className='bg-white h-full mt-5'>
-        <Button className='py-[10px] px-[20px] bg-primary text-white flex items-center md:gap-1 lg:gap-2 rounded-[6px] mb-6 '>
+        <Button className='py-[10px] px-[20px] bg-primary hover:bg-green-400 text-white flex items-center md:gap-1 lg:gap-2 rounded-[6px] mb-6 '>
            <Korzinka/>   Maxsus buyurtma
         </Button>
         <div>

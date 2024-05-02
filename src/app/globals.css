@@ -10,7 +10,7 @@ body{
 
   .navbar::before{
     content: "";
-    background-image: url("/flag.png");
+    background-image: url("/imgs/flag.png");
     background-repeat: no-repeat;
     width: 15px;
     height: 15px;

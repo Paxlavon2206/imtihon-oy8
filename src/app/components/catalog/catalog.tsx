@@ -13,7 +13,7 @@ export const Catalog =  async () => {
         </Button>
         <div>
         {catalog.map((item) => (
-            <Link key={item.id} href={item.path} className='flex mb-[35px] hover:text-primary'>
+            <Link key={item.id} href={`/catalog-pages/${item.path}`} className='flex mb-[35px] hover:text-primary'>
                 <p className='md:w-[100px] lg:w-[170px] font-sans md:text-[13px] lg:text-[15px] hover:text-primary hover:underline'>{item.title}</p>
                <span className='text-black hover:text-primary'> <RightIcon/></span>
             </Link>

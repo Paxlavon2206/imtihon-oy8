@@ -1,10 +1,10 @@
 
-import { Header } from "@/app/layout/header/header";
 import { Banner } from "./components/banner/banner";
 import { Catalog } from "./components/catalog/catalog";
 import { NewsIcon } from "../../public/icons/news-icon";
 import { MiniCatalog } from "./components/catalog/mini-catalog";
-import { ProductSome } from "./components/products/products";
+import { DiscountProducts, OmmabopProducts, ProductSome } from "./components/products/products";
+import { Star } from "../../public/icons/star";
 
 
 export default function Home() {
@@ -29,6 +29,24 @@ export default function Home() {
           </div>
           </div>
          <div> <ProductSome/></div>
+        </div>
+        <div>
+        <div className="flex mt-[30px] items-center gap-5 mb-7">
+          <Star/>
+          <h1 className="font-bold md:text-[25px] lg:text-[32px] ">Ommabop mahsulotlar</h1>
+          <div>
+          </div>
+          </div>
+         <div> <OmmabopProducts/></div>
+        </div>
+        <div>
+        <div className="flex mt-[30px] items-center gap-5 mb-7">
+          <NewsIcon/>
+          <h1 className="font-bold md:text-[25px] lg:text-[32px] ">Chegirmadagi mahsulotlar</h1>
+          <div>
+          </div>
+          </div>
+         <div> <DiscountProducts/></div>
         </div>
          </div>
          </div>

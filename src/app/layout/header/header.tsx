@@ -1,3 +1,4 @@
+import { HeaderLogo } from "../../../../public/icons/header-logo";
 import { Notification } from "../../../../public/icons/notification";
 import { Profile } from "../../../../public/icons/profile";
 import { Search } from "../../../../public/icons/search";
@@ -9,9 +10,11 @@ export const Header = () => {
     <div>
         <header className="container pt-6 flex justify-center items-center pb-[21px]">
         <div className="mr-[44px]">
-          <a href="/">
-            <img className="w-[116px]" src="/mobilux_logo.png" alt="img" />
+         <div className="w-[100px]">
+         <a href="/">
+          <HeaderLogo/>
           </a>
+         </div>
         </div>
         <form className="hidden md:flex  relative items-center mr-6">
           <div className="absolute pl-4">

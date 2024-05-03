@@ -14,7 +14,9 @@ const config: Config = {
       colors: {
         primary:"#1FBA4A",
         secondary:"#F6F8FA", 
-        greyBg:"#F6F8FA",       
+        greyBg:"#F6F8FA",  
+        greyBg2:"rgba(10,10,10,0.5)",
+        greenBg:"rgba(31,186,74, 0.1)"     
       },
       container: {
         center: true,

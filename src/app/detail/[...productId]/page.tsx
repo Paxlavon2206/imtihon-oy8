@@ -16,6 +16,7 @@ import {
 } from "@/components/ui/carousel";
 import { ProductCard } from "@/app/components/product-card/product-card";
 import Link from "next/link";
+import { OneStar } from "../../../../public/icons/one-star";
 
 interface Params {
   params: {
@@ -141,37 +142,35 @@ export default async function ProductDetails({ params }: Params) {
         
             <Tabs defaultValue="account" className="w-full">
               <TabsList className="w-full">
-                <TabsTrigger value="account" className="w-full">
+                <TabsTrigger value="account" className="w-full font-extrabold text-[15px]">
                   Основные характеристики
                 </TabsTrigger>
-                <TabsTrigger value="password" className="w-full">
+                <TabsTrigger value="password" className="w-full font-extrabold text-[15px]">
                   Отзывы (2)
                 </TabsTrigger>
               </TabsList>
               <TabsContent value="account">
-                {overall?.map((item: any) => (
-    
                   <ul>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
                     <p className="mb-3 text-greyBg2 w-[600px]">
                       Объем встроенной памяти
                     </p>{" "}
-                    <h4>{item.cores}</h4>{" "}
+                    <h4>128 ГБ</h4>{" "}
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
                     <p className=" w-[600px] mb-3 text-greyBg2">
                       Процессор
                     </p>{" "}
-                    <h4>{item.processor}</h4>{" "}
+                    <h4>Apple A15 Bionic</h4>{" "}
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
                     <p className="w-[600px] mb-3 text-greyBg2">
                       Диагональ
                     </p>{" "}
-                    <h4>{item.dioganal}</h4>{" "}
+                    <h4>5.4</h4>{" "}
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
@@ -179,7 +178,7 @@ export default async function ProductDetails({ params }: Params) {
                       {" "}
                       Тип дисплея
                     </p>{" "}
-                    <h4>{item.display}</h4>{" "}
+                    <h4>Super Retina XDR (OLED)</h4>{" "}
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
@@ -189,14 +188,14 @@ export default async function ProductDetails({ params }: Params) {
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
                     <p className="w-[600px] mb-3 text-greyBg2">Вес</p>{" "}
-                    <h4>{item.weight} г</h4>{" "}
+                    <h4>238 г</h4>{" "}
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     {" "}
                     <p className="w-[600px] mb-3 text-greyBg2">
                       Фотокамера
                     </p>{" "}
-                    <h4>{item.camera}</h4>
+                    <h4 className="w-[450px]">телефото 12 МП F/2.80, широкоугольная 12 МП F/1.50, сверхширокоугольная 12 МП F/1.80</h4>
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     <p className="w-[600px] mb-3 text-greyBg2">
@@ -208,18 +207,41 @@ export default async function ProductDetails({ params }: Params) {
                     <p className="w-[600px] mb-3 text-greyBg2">
                       Количество ядер
                     </p>
-                    <h4>{item.cores}</h4>
+                    <h4>6 ядер</h4>
                   </li>
                   <li className="flex mt-4 border-b border-dashed">
                     <p className="w-[600px] mb-3 text-greyBg2">Аккумулятор</p>
-                    <h4>{item.battery}</h4>
+                    <h4>Li-Ion, Время работы в режиме прослушивания музыки 95 ч, функция </h4>
                   </li>
-                </ul>
-                 
-                ))}
+                </ul>    
               </TabsContent>
               <TabsContent value="password">
-                Change your password here.
+                <ul className="flex gap-3 py-6">
+                  <li className="border w-[114px] h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]">Barchasi(02)</li>
+                  <li className="border w-[99px] gap-1 h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]"><OneStar/> 5 (02)</li>
+                  <li className="border gap-1 w-[99px] h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]"><OneStar/>  4 (00)</li>
+                  <li className="border gap-1 w-[99px] h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]"><OneStar/>  3 (00)</li>
+                  <li className="border gap-1 w-[99px] h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]"><OneStar/> 2 (00)</li>
+                  <li className="border gap-1 w-[99px] h-10 hover:border-green-500 flex items-center justify-center rounded-[12px]"><OneStar/> 1 (00)</li>
+                </ul>
+                <div className="flex items-center  text-greyBg2 justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <h3>Hasanboy Tursunov Mo’ydinjon o‘g‘li,  Uzbekistan </h3> 
+                <OneStar/> 5
+                </div>
+                <h3 className="text-greyBg2">2 Haftalar oldin</h3>
+                </div>
+                <h2 className="font-semibold mb-2">Juda yaxshi smartfon ekan, ishlashi ham a’lo</h2>
+                <div className="border border-dashed mb-6"></div>
+
+                <div className="flex items-center  text-greyBg2 justify-between mb-2">
+                  <div className="flex items-center gap-2">
+                    <h3>Hasanboy Tursunov Mo’ydinjon o‘g‘li,  Uzbekistan </h3> 
+                <OneStar/> 4
+                </div>
+                <h3 className="text-greyBg2">2 Oylar oldin</h3>
+                </div>
+                <h2 className="font-semibold mb-2">Juda yaxshi smartfon ekan, ishlashi ham a’lo</h2>
               </TabsContent>
             </Tabs>
       </div>
